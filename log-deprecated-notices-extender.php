@@ -1,9 +1,9 @@
 <?php
 /*
  * Plugin Name: Log Deprecated Notices Extender
- * Plugin URI: http://wordpress.org/extend/plugins/log-deprecated-notices/
+ * Plugin URI: http://jkudish.com/log-deprecated-notices-extender/
  * Description: WordPress plugin that extends Andrew Nacin's Log Deprecated Notices to show a link in the WP 3.3+ Toolbar.
- * Version: 0.1
+ * Version: 0.1.1
  * Author: Joachim Kudish
  * Author URI: http://jkudish.com
  * License: GPLv2 or later

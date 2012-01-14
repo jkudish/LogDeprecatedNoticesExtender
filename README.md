@@ -1,17 +1,25 @@
-# Custom Metada Manager for WordPress
+# Log Deprecated Notices Extender
 
 This developer-oriented WordPress plugin extends Andrew Nacin's Log Deprecated Notices to show a link in the WP 3.3+ Toolbar.
 
+I sync changes between github and the [WordPress.org plugin repository](http://wordpress.org/extend/plugins/log-deprecated-notices-extender/) whenever there is a release. Why? Because collaboration is made much easier on github :)
+
+
 # Installation
 
-1. Make sure you already have the [Log Deprecated Notices](http://wordpress.org/extend/plugins/log-deprecated-notices/) plugin by Andrew Nacin installed
+1. Make sure you already have the [Log Deprecated Notices](http://wordpress.org/extend/plugins/log-deprecated-notices/) plugin by [Andrew Nacin](http://nacin.com)
 2. Install through the WordPress admin or upload the plugin folder to your `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Enjoy!
 
 # Changelog
 
-= 0.1 =
+## 0.1.1
+
+* Moved the `count()` function to the toolbar hook
+* Added a screenshot
+
+## 0.1
 
 * Initial release
 
