@@ -37,7 +37,6 @@ if (!class_exists( 'Deprecated_Log_Extender' ) ) :
 		 * @return null
 		 */
 		public function __construct() {
-			$this->count();
 			add_action('admin_bar_menu', array( &$this, 'manageToolbar'), 1001); // run it late in the game
 		}
 
@@ -57,6 +56,8 @@ if (!class_exists( 'Deprecated_Log_Extender' ) ) :
 
 			$classes = apply_filters( 'deprecated_log_extender_classses', array() );
 			$classes = implode( " ", $classes );
+
+			$this->count();
 
 			$toolbar->add_node( array(
 				'id'     => 'deprecated_log_extender',
