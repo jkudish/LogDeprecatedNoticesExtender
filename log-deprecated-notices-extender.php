@@ -3,7 +3,7 @@
  * Plugin Name: Log Deprecated Notices Extender
  * Plugin URI: http://jkudish.com/log-deprecated-notices-extender/
  * Description: WordPress plugin that extends Andrew Nacin's Log Deprecated Notices to show a link in the WP 3.3+ Toolbar.
- * Version: 0.1.1
+ * Version: 0.1.2
  * Author: Joachim Kudish
  * Author URI: http://jkudish.com
  * License: GPLv2 or later
@@ -34,7 +34,7 @@ if (!class_exists( 'Deprecated_Log_Extender' ) ) :
 
 		/**
 		 * class constructors, where we hook the other stuff
-		 * @return null
+		 * @return void
 		 */
 		public function __construct() {
 			add_action('admin_bar_menu', array( &$this, 'manageToolbar'), 1001); // run it late in the game
@@ -51,7 +51,11 @@ if (!class_exists( 'Deprecated_Log_Extender' ) ) :
 			$this->title = ( $this->count ) ? sprintf( __( 'Deprecated Calls <small>%s</small>', 'log-deprecated' ),number_format_i18n( $this->count ) ) : __( 'Deprecated Calls', 'log-deprecated' );
 		}
 
-
+		/**
+		 * hooks into the toolbar to add our new menu item
+		 * @param  $toolbar the toolbar object
+		 * @return void
+		 */
 		public function manageToolbar($toolbar) {
 
 			$classes = apply_filters( 'deprecated_log_extender_classses', array() );
@@ -71,7 +75,7 @@ if (!class_exists( 'Deprecated_Log_Extender' ) ) :
 	} // end class
 
 	/**
-	 * make sure to init the class after other plugins have loaded
+	 * make sure to init the class after Deprecated_Log has loaded
 	 * and only in the admin
 	 */
 	add_action('admin_init', 'DeprecatedLogExtenderInit');

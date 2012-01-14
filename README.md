@@ -14,6 +14,10 @@ I sync changes between github and the [WordPress.org plugin repository](http://w
 
 # Changelog
 
+## 0.1.2
+* Updated documentation inside the plugin's class (docblock)
+
+
 ## 0.1.1
 
 * Moved the `count()` function to the toolbar hook

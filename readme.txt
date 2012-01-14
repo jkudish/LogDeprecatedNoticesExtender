@@ -35,6 +35,10 @@ Follow development, fork and contribute on [github](https://github.com/jkudish/L
 
 == Changelog ==
 
+= 0.1.2 =
+
+* Updated documentation inside the plugin's class (docblock)
+
 = 0.1.1 =
 
 * Moved the `count()` function to the toolbar hook
