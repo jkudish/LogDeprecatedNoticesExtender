@@ -4,7 +4,7 @@ Donate link: http://jkudi.sh/plugindonation
 Tags: deprecated, logging, admin, WP_DEBUG, E_NOTICE, developer, toolbar, admin bar, adminbar
 Requires at least: 3.3
 Tested up to: 3.4-alpha
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 
 This developer-oriented WordPress plugin extends Andrew Nacin's Log Deprecated Notices to show a link in the WP 3.3+ Toolbar.
 
