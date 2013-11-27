@@ -14,9 +14,13 @@ I sync changes between github and the [WordPress.org plugin repository](http://w
 
 # Changelog
 
+## 0.1.3 (11/27/2013)
+* Enhancement for count all items of deprecated notices
+* Codex changes
+* Update screenshot
+
 ## 0.1.2
 * Updated documentation inside the plugin's class (docblock)
-
 
 ## 0.1.1
 
